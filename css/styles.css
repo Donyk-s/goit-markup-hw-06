@@ -789,6 +789,7 @@ transition: opacity var(--new-timing-function) var(--timing-function), visibilit
  0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -841,9 +842,46 @@ font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
 text-align: center;
+margin-bottom: 30px;
 }
-    
-    
+
+.form-feedback{
+  display: flex;
+  flex-direction: column;
+
+}
+.client-name{
+  margin-bottom: 30px;
+}
+.phone-number{
+  margin-bottom: 30px;
+}
+.user-email{
+  margin-bottom: 30px;
+}
+.feedback{
+  resize: none;
+  margin-bottom: 30px;
+}
+ .submit{
+width: 200px;
+ padding:10px 52px ;
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+display: flex;
+
+text-align: center;
+letter-spacing: 0.06em;
+
+color: var(--background-header);
+transition: background var(--new-timing-function) var(--timing-function),
+box-shadow var(--new-timing-function) var(--timing-function);
+ }
+ .submit:hover{
+  background: var(--button-servise);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ }   
 
 
 
