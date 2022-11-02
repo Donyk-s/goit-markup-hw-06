@@ -855,7 +855,6 @@ margin-bottom: 12px;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
-
 color: var(--p-color);
  
 }
@@ -863,22 +862,27 @@ color: var(--p-color);
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 margin-bottom: 10px;
+transition: border-color var(--new-timing-function) var(--timing-function);
+}
+.client-name-txt:hover{
+  border-color: var(--hover-color);
 }
 .phone-number{
   margin-bottom: 4px;
-   margin-bottom: 4px;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
-
-color: var(--p-color);
- 
-  
+color: var(--p-color); 
 }
 .user-tel{
 border: 1px solid rgba(33, 33, 33, 0.2);
  border-radius: 4px;
  margin-bottom: 10px;
+transition: border-color var(--new-timing-function) var(--timing-function);
+
+}
+.user-tel:hover{
+  border-color: var(--hover-color);
 }
 .user-email{
   margin-bottom: 4px;
@@ -886,7 +890,6 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
-
 color: var(--p-color);
  
 }
@@ -894,6 +897,11 @@ color: var(--p-color);
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 margin-bottom: 10px;
+transition: border-color var(--new-timing-function) var(--timing-function);
+
+}
+.user-post:hover{
+ border-color: var(--hover-color); 
 }
 .feedback{
   margin-bottom: 4px;
@@ -911,6 +919,11 @@ color: var(--p-color);
 border-radius: 4px;
 padding: 12px;
 margin-bottom: 20px;
+transition: border-color var(--new-timing-function) var(--timing-function);
+
+}
+.form-feedbck:hover{
+ border-color: var(--hover-color); 
 }
  .submit{
 width: 200px;
@@ -925,8 +938,7 @@ letter-spacing: 0.06em;
 margin: 0 auto;
 
 color: var(--background-header);
-transition: background var(--new-timing-function) var(--timing-function),
-box-shadow var(--new-timing-function) var(--timing-function);
+transition: background var(--new-timing-function) var(--timing-function);
  }
  .submit:hover{
   background: var(--button-servise);
