@@ -893,6 +893,7 @@ color: var(--p-color);
 .user-post{
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+margin-bottom: 10px;
 }
 .feedback{
   margin-bottom: 4px;
@@ -901,6 +902,7 @@ line-height: 1.16;
 letter-spacing: 0.01em;
 
 color: var(--p-color);
+
  
 }
 .form-feedbck{
@@ -908,6 +910,7 @@ color: var(--p-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding: 12px;
+margin-bottom: 20px;
 }
  .submit{
 width: 200px;
