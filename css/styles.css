@@ -940,16 +940,11 @@ transition: border-color var(--new-timing-function) var(--timing-function);
 .user-post:hover +.icon-person{
   fill: var(--hover-color);
 }
-.feedback{
-  margin-bottom: 4px;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-
+.checkbox{
+line-height: 1.71;
 color: var(--p-color);
+} 
 
- 
-}
 .feedback-txt{
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
