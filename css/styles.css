@@ -590,7 +590,7 @@ transform: translateY(0);
 font-weight: 400;
 font-size: 18px;
 line-height: 1.55;
-color: #FFFFFF;
+color: var(--background-header);
 background: rgba(33, 150, 243, 0.9);
 position: absolute;
 top: 0;
@@ -661,7 +661,6 @@ overflow: auto;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--h-color);
   margin-bottom: 50px;
   }
@@ -730,7 +729,7 @@ overflow: auto;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--background-header);
   margin-bottom: 20px;
 
   }
@@ -763,7 +762,7 @@ overflow: auto;
   }
 
   .social-list-icon-footer{
-    fill:#FFFFFF;
+    fill: var(--background-header);
   }
   .social-list-link-footer{
  transition: background-color var(--new-timing-function) var(--timing-function);
@@ -784,7 +783,7 @@ transition: opacity var(--new-timing-function) var(--timing-function), visibilit
   .modal {
   width: 528px;
   min-height: 581px;
-  background-color: #ffffff;
+  background-color: var(--background-header);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
  0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -907,7 +906,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 height: 40px;
 padding-left: 42px;
 transition: border-color var(--new-timing-function) var(--timing-function);
-
+outline: transparent;
 }
 .user-tel:hover{
   border-color: var(--hover-color);
@@ -931,7 +930,7 @@ width: 100%;
 height: 40px;
 padding-left: 42px;
 transition: border-color var(--new-timing-function) var(--timing-function);
-
+outline: transparent;
 }
 .user-post:hover{
  border-color: var(--hover-color); 
@@ -944,7 +943,47 @@ transition: border-color var(--new-timing-function) var(--timing-function);
 line-height: 1.71;
 color: var(--p-color);
 } 
+.check{
+  display: flex;
+ 
+  align-items: center;
+  fill: transparent;
+  padding-left: 12px;
+  gap: 8px;
+  margin-bottom: 30px;
+}
 
+
+.check span{
+  border-radius: 2px;
+  border: 2px solid var(--h-color);
+  width: 16px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+
+}
+
+.check-inp:checked + .check span{
+  fill: var(--background-header);
+  background-color: var(--hover-color);
+  border: transparent;
+}
+
+.link-input{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71px;
+color: var(--p-color);
+transition: color var(--new-timing-function) var(--timing-function);
+
+}
+.link-input:hover{
+  color: var(--hover-color);
+}
 .feedback-txt{
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -954,7 +993,7 @@ margin-bottom: 20px;
 width: 100%;
 height: 120px;
 transition: border-color var(--new-timing-function) var(--timing-function);
-
+outline: transparent;
 }
 .feedback-txt:hover{
  border-color: var(--hover-color); 
@@ -977,14 +1016,67 @@ justify-content: center;
 text-align: center;
 letter-spacing: 0.06em;
 margin: 0 auto;
+border: transparent;
 
 color: var(--background-header);
 transition: background var(--new-timing-function) var(--timing-function);
  }
  .submit:hover{
   background: var(--button-servise);
-
  }   
 
+ .footer-input{
+  
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--background-header);
+ }
 
+ .sign-email{
+  width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+color: var(--background-header);
+ }
+.sign-email::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+align-items: center;
+color: rgba(255, 255, 255, 0.6);
+padding-top: 15px;
+padding-bottom: 15px;
 
+padding-left: 16px;
+}
+.sign-btn{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--background-header);
+background-color: var(--hover-color);
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+display: flex;
+}
+.sign-btn:hover{
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+color: chartreuse;  
+}
+
+.plain{
+  fill: var(--background-header);
+  margin-left: 10px;
+  margin-top: 13px;
+  margin-right: 28px;
+  margin-bottom: 13px;
+}

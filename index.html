@@ -309,6 +309,18 @@
                         </a></li>
                     </ul>
                     </div>
+                    <h2 class="footer-input">Підпишіться на розсилку</h2>
+                    <input type="email" 
+                    name="sign-up"
+                    class="sign-email"
+                    placeholder="E-mail"
+                    required>
+                    <button type="submit" class="sign-btn">
+                        Підписатися
+        <svg class="plain" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
+                </button>
                     </div>
                     </div>
          </footer>
@@ -363,20 +375,33 @@
   </div>
        
    </div>
-  <label for="checkbox" class="check">Погоджуюся з розсилкою та приймаю Умови договору</label>
-  
-   <input
-    type="checkbox"
-     id="checkbox" 
-     name="igree"
-     value="Погоджуюся"
-     checked/>
+
 <label class="feedback" for="feedback">Коментар</label>
    <textarea name="feedback"
    class="feedback-txt"
    name="user-feedbck" 
    id="feedback"
    placeholder="Введіть текст"></textarea>
+
+    <input
+    type="checkbox"
+     id="checkbox" 
+     name="igree"
+     class="check-inp visually-hidden"
+     checked/>
+        <label for="checkbox" class="check">
+              <span>
+            <svg class="icon-check" width="16" height="15">
+            <use href="./icons.svg#icon-che-1"></use>
+        </svg>
+        </span>
+
+         Погоджуюся з розсилкою та приймаю 
+    <a class="link-input" href="#" target="_blank" rel="noreferrer noopener">Умови договору</a>
+       
+        </label>
+       
+       
    <button class="submit" type="submit" >Відправити</button>
                 </form>
                 </div>
