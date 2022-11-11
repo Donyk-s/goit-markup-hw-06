@@ -1015,6 +1015,7 @@ margin-bottom: 20px;
 .feedback{
   margin-bottom: 4px;
   display: block;
+  color: var(--p-color);
 }
 .feedback-txt{
   resize: none;
