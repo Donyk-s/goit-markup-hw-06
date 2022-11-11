@@ -822,7 +822,7 @@ padding: 40px;
 }
 .modal-close-icon{
   fill: currentColor;
-  transition: color var(--new-timing-function) var(--timing-function);
+  
 }
 
 
@@ -852,8 +852,11 @@ margin-bottom: 12px;
 .input-name{
 border-radius: 4px;
  margin-bottom: 10px;
+ display: block;
+
 }
 .input-wrap{
+  
   position: relative;
   margin-bottom: 10px;
 }
@@ -862,7 +865,8 @@ border-radius: 4px;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
-color: var(--p-color); 
+color: var(--p-color);
+display: block; 
 }
 
 .client-name-txt{
@@ -892,11 +896,12 @@ transform: translateY(-50%);
 }
 
 .phone-number{
-  margin-bottom: 4px;
+ padding-bottom: 4px;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--p-color); 
+display: block;
 }
 .user-tel{
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -922,6 +927,7 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--p-color);
+display: block;
  
 }
 .user-post{
@@ -941,18 +947,19 @@ outline: transparent;
 .user-post:hover +.icon-person{
   fill: var(--hover-color);
 }
+.deal-check{
+  display: flex;
+   align-items: center;
+  fill: transparent;
+  padding-left: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+}
 .checkbox{
 line-height: 1.71;
 color: var(--p-color);
 } 
-.check{
-  display: flex;
-  align-items: center;
-  fill: transparent;
-  padding-left: 12px;
-  gap: 8px;
-  margin-bottom: 30px;
-}
 
 .check span{
   border-radius: 2px;
@@ -963,6 +970,10 @@ color: var(--p-color);
   justify-content: center;
   align-items: center;
   fill: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 9px;
 
 }
 
@@ -971,10 +982,17 @@ color: var(--p-color);
   background-color: var(--hover-color);
   border: transparent;
 }
+
+.check-inp:not(:checked) + .check span{
+  background-color: var(--team-background);
+}
+
+
 .check-inp:hover + .check span,
 .check-inp:focus + .check span{
-  background-color: var(--hover-color);
-  border: transparent;
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.3), 0px 2px 1px rgba(0, 0, 0, 0.3);
+ border-color: var(--hover-color);
+ 
 }
 
 .link-input{
@@ -982,22 +1000,28 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71px;
-color: var(--p-color);
+color: var(--hover-color);
 transition: color var(--new-timing-function) var(--timing-function);
 
 }
 .link-input:hover{
-  color: var(--hover-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
+text-decoration: none;
+}
+
+.input-feedback{
+margin-bottom: 20px;
 }
 .feedback{
   margin-bottom: 4px;
+  display: block;
 }
 .feedback-txt{
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding: 12px 16px;
-margin-bottom: 20px;
+
 width: 100%;
 height: 120px;
 transition: border-color var(--new-timing-function) var(--timing-function);
@@ -1015,7 +1039,7 @@ color: rgba(117, 117, 117, 0.5);
 
 }
  .submit{
-width: 200px;
+line-height: 1.87;
  padding:10px 52px ;
   background-color: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1050,7 +1074,7 @@ display: flex;
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 16px;
-
+height: 50px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
@@ -1063,9 +1087,6 @@ font-size: 16px;
 line-height: 1.25;
 align-items: center;
 color: rgba(255, 255, 255, 0.6);
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 16px;
 
 }
 .container-input{
@@ -1115,5 +1136,6 @@ fill: currentColor ;
 }
 .sign-flex{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  gap: 12px;
 }

@@ -309,8 +309,10 @@
                         </a></li>
                     </ul>
                     </div>
-                    <h2 class="footer-input">Підпишіться на розсилку</h2>
-                    <input type="email" 
+                    <div class="container-input">
+  <h2 class="footer-input">Підпишіться на розсилку</h2>
+                    <form class="sign-flex">
+ <input type="email" 
                     name="sign-up"
                     class="sign-email"
                     placeholder="E-mail"
@@ -321,6 +323,9 @@
             <use href="./images/icons.svg#icon-icon-send"></use>
         </svg>
                 </button>
+                    </form>
+                   
+                    </div>
                     </div>
                     </div>
          </footer>
@@ -375,15 +380,16 @@
   </div>
        
    </div>
-
+<div class="input-feedback">
 <label class="feedback" for="feedback">Коментар</label>
    <textarea name="feedback"
    class="feedback-txt"
-   name="area-feedbck" 
    id="feedback"
    placeholder="Введіть текст"></textarea>
 
-    <input
+</div>
+<div class="deal-check">
+ <input
     type="checkbox"
      id="checkbox" 
      name="igree"
@@ -400,6 +406,8 @@
     <a class="link-input" href="#" target="_blank" rel="noreferrer noopener">Умови договору</a>
        
         </label>
+</div>
+   
        
        
    <button class="submit" type="submit" >Відправити</button>
